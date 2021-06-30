@@ -1,10 +1,10 @@
-Hi!, this is my first pip package so sorry if its rough around the edges,
+Hi! this is my first pip package so sorry if its rough around the edges,
 
-The BetterInstagram package is an 'API like' package used to get information about a users account on instagram(even if they're private)
+The better_instagram package is an 'API like' package used to get information about a users account on instagram(even if they're private)
 
 I say 'API like' because its technically not an API at all although I structured it like one, in reality it acts like a bunch of webscraping macros which is running in the background(don't tell the feds).
 
-More functions coming soon which will make this more powerful than public acount APIs.
+More functions coming soon which will make this more powerful than public account APIs.
 
 Hope you enjoy! and feel free to message me if u have feedback.
 
@@ -21,23 +21,28 @@ note: chrome is needed for this package(driver will come with the package)
 
 Usage
 =====
-
-  from better_instagram import better_instagram as bi
-
+```
+from better_instagram import better_instagram as bi
+```
 
 Documentation
 =========
 login(username,password):
+
 Activates browser and logs you in to access private accounts
-    login(username="leomessi",password="Goat1234")
+```py
+login(username="leomessi",password="Goat1234")
+```
 
+getuser(username):
 
-    getUser(username):
-Accesses a user's account and extracts their basic information,(returns a dictionary). You can use this function without logging in but Instagram may force a login on smaller accounts.
-    ->print(getuser("leomessi"))
-    {'username': 'leomessi', 'name': 'Leo Messi', 'biography': 'Bienvenidos a la cuenta oficial de Instagram de Leo Messi / Welcome to the official Leo Messi Instagram account', 'posts': '731', 'followers': '224m', 'following': '236', 'is_verified': True, 'website': 'messi.com', 'are_you_following': True, 'url': 'https://www.instagram.com/leomessi/}
-
-
+Accesses a user's account and extracts their basic information,(returns a dictionary). You can use this function without logging in but Instagram may force a login on smaller or private accounts.
+```py
+print(getuser("leomessi"))
+ ```
+ ```
+ {'username': 'leomessi', 'name': 'Leo Messi', 'biography': 'Bienvenidos a la cuenta oficial de Instagram de Leo Messi / Welcome to the official Leo Messi Instagram account', 'posts': '731', 'followers': '224m', 'following': '236', 'is_verified': True, 'website': 'messi.com', 'are_you_following': True, 'url': 'https://www.instagram.com/leomessi/'}
+```
 ChangeLog
 =========
 
