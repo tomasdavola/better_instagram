@@ -10,9 +10,7 @@ Hope you enjoy! and feel free to message me if u have feedback.
 
 github: oyas4572
 
-email: third4572@gmail.com
-
-discord: tms#472
+discord: tms#9649
 
 pypi: oyas
 
